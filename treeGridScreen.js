@@ -7,7 +7,7 @@ import TREEGRID_ITEM_OBJECT from '@salesforce/schema/TreeGridObjItem__c';
 import toggleActive            from '@salesforce/apex/TreeGridCtrl.toggleActive';
 import getAllTreeGrid       from '@salesforce/apex/TreeGridCtrl.getAllTreeGrid';
 import getTreeGridData     from '@salesforce/apex/TreeGridCtrl.getTreeGridData';
-aaa
+
 const HIERARCHY_VIEW_COLS = [
     { 
         label: "Name",
@@ -63,9 +63,9 @@ export default class TreeGridScreen extends NavigationMixin(LightningElement) {
     saveHierarchyConfirmMessage = SAVE_HIERARCHY_MESSAGE;
     cardTitle = CARD_TITLE;
 
-    // @api isInRecordPage = false;
-    // @api recordId;
-    // @api objectApiName;
+    @api isInRecordPage = false;
+    @api recordId;
+    @api objectApiName;
     targetObjectApiName = 'TreeGridObj__c';
     newestTreeGridObjId;
     toastMessage;
