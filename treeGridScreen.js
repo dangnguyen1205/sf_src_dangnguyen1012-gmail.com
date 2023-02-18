@@ -63,9 +63,9 @@ export default class TreeGridScreen extends NavigationMixin(LightningElement) {
     saveHierarchyConfirmMessage = SAVE_HIERARCHY_MESSAGE;
     cardTitle = CARD_TITLE;
 
-    // @api isInRecordPage = false;
-    // @api recordId;
-    // @api objectApiName;
+    @api isInRecordPage = false;
+    @api recordId;
+    @api objectApiName;
     targetObjectApiName = 'TreeGridObj__c';
     newestTreeGridObjId;
     toastMessage;
